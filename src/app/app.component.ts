@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  ngOnInit() {
+    this.logoPreload()
+  }
+
+  logoPreload() {
+    (document.querySelector('.logo') as HTMLElement).style.display = "block"
+    setTimeout(() => {
+      (document.querySelector('.logo') as HTMLElement).style.display = "none"
+    }, 5000);
+  }
+
 }

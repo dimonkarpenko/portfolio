@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 
 * {
@@ -19,4 +21,9 @@ ul {
 a {
     color: #000;
     text-decoration: none;
+}
+
+.sec {
+    background: #000;
+    height: 100vh;
 }

@@ -1,0 +1,78 @@
+$font: 'MuseoModerno', cursive;
+$font-color: #333;
+
+.s1 {
+    overflow-y: auto;
+
+    svg {
+        width: 100%;
+    }
+}
+
+.masonry {
+    transform: translate(0%, 20%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    flex-basis: 45%;
+    width: 45%;
+    margin: 5px;
+    figure {
+        position: relative;
+        &:hover {
+            figcaption {
+                opacity: 1;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    figcaption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        text-align: center;
+        background: rgba($color: #000000, $alpha: .8);
+        padding: 10px;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 50%;
+        opacity: 0;
+        transition: .4s linear;
+
+        ul {
+            li {
+                padding: 10px;
+            }
+        }
+
+        span {
+            color: #fff;
+            font-size: 30px;
+            font-family: $font;
+        }
+
+        a {
+            color: #fff;
+            font-size: 20px;
+            font-family: $font;
+
+            &:hover {
+                background: linear-gradient(to right, #e72a3a 10%, #fff 90%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% auto;
+            }
+        }
+    }
+}
+

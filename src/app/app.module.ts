@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { ContactsComponent } from './contacts/contacts.component';
     MenuComponent,
     MainPageComponent,
     ProjectsComponent,
-    ContactsComponent
   ],
   imports: [
     BrowserModule,

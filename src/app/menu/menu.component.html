@@ -1,7 +1,7 @@
 <header>
     <nav id="menu">
         <div class="menu-logo">
-            <h1 class="menu-logo__text">Portfolio</h1>
+            <h1 class="menu-logo__text">DDEV</h1>
         </div>
 
         <div class="menu-burger" (click)="toggleMenu()">
@@ -9,7 +9,6 @@
             <ul class="menu-main" [ngClass]="toggle ? 'menuMainOpen' : ''">
                 <li><a [routerLink]="['/']"  routerLinkActive="active-link" class="menu-main__items">Home</a></li>
                 <li><a [routerLink]="['/projects']"  routerLinkActive="active-link" class="menu-main__items">Projects</a></li>
-                <li><a [routerLink]="['/contacts']"  routerLinkActive="active-link" class="menu-main__items">Contact me</a></li>
             </ul>
         </div>
     </nav>
